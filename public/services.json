@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Treadmill Run",
+        "price": "350",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/bW2JGJw/portrait-young-healthy-woman-running-treadmill-she-smile-during-workout-gym-healthy-lifestyle-concep.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Yoga",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/rbm4q3k/benjamin-child-r-On57-CBgy-Mo-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "HIIT Workout",
+        "price": "400",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/YDrkSJM/jonathan-borba-9-Mmy-SMZ42-PI-unsplash.jpg"
+    }
+]

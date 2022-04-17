@@ -1,0 +1,8 @@
+.services-title {
+    color: #DB0B5F;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
