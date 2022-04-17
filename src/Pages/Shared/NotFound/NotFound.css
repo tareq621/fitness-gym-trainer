@@ -1,0 +1,11 @@
+.notFound-container img {
+    width: 1000px;
+    /* margin-bottom: 40px; */
+}
+
+.notFound-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
