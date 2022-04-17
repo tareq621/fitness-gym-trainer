@@ -5,8 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Signup = () => {
-    const navigate = useNavigate();
-
+    let errorElement;
     // create a new user
     const [
         createUserWithEmailAndPassword,
@@ -15,17 +14,20 @@ const Signup = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    const navigate = useNavigate();
+
     const navigateLogin = () => {
         navigate('/login')
     }
     if (user) {
         navigate('/home')
     }
+    if (error) {
+        errorElement = <p className='text-danger'>Error:{error.message}</p>
+    }
 
-
-    const handleRegister = event => {
+    const handleRegister = (event) => {
         event.preventDefault();
-        const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
@@ -45,6 +47,7 @@ const Signup = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name='password' placeholder="Password" required />
                 </Form.Group>
+                {errorElement}
                 <Button style={{ color: 'white', backgroundColor: '#FF6666' }} className='border-0' type="submit">
                     Submit
                 </Button>

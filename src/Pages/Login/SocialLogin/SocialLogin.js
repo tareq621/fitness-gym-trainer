@@ -5,7 +5,7 @@ import auth from '../../../firebase.init';
 import google from '../../../images/social/google.png'
 
 const SocialLogin = () => {
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user] = useSignInWithGoogle(auth);
     if (user) {
         Navigate('/home')
     }

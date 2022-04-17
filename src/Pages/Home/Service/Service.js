@@ -8,7 +8,7 @@ const Service = (props) => {
     const { name, img, price, description } = props.service;
     return (
         <div>
-            <Card style={{ width: '18rem' }} className="border-0 text-center">
+            <Card className="border-0 text-center">
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>
