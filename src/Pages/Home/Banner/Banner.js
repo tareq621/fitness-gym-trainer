@@ -26,7 +26,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                         <h1>TREADMILL WORKOUT FOR RUNNERS</h1>
-                        <p className='text-light'>Everything to do with the treadmill. From exercising on them for beginners, more experienced runners and those looking to lose weight.</p>
+                        <p className='text-light'>Everything to do with the treadmill. From exercising on them for beginners.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -38,7 +38,7 @@ const Banner = () => {
 
                     <Carousel.Caption>
                         <h1>YOGA FOR EVERYONE</h1>
-                        <p className='text-light'>Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation.</p>
+                        <p className='text-light'>Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

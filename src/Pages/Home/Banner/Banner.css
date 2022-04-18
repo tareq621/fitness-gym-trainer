@@ -14,3 +14,25 @@
     right: 50px;
     top: 150px;
 }
+
+@media only screen and (max-width:576px) {
+    .title {
+        position: relative;
+        top: 100px;
+        z-index: 1000;
+    }
+
+    .title-name {
+        font-size: 200%;
+        position: absolute;
+        left: 100px;
+        right: 50px;
+        top: 26px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .title-name {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -14,7 +14,7 @@ const Footer = () => {
                     <Nav.Link as={Link} to="/" className='text-light'>Home</Nav.Link>
                     <Nav.Link as={Link} to="/about" className='text-light'>About</Nav.Link>
                     <Nav.Link as={Link} to="/blog" className='text-light'>Blog</Nav.Link>
-                    <Nav.Link as={Link} to="/" className='text-light'>Privacy Policy</Nav.Link>
+                    <Nav.Link as={Link} to="/privacy" className='text-light'>Privacy Policy</Nav.Link>
                 </div>
                 <p className='text-light text-center mb-1'>Copyright <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> {year}. All rights reserved.</p>
             </footer>
