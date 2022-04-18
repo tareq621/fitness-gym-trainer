@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = () => {
-    const [email, setEmail] = useState('');
     let errorElement;
     // create a new user
     const [
@@ -13,10 +13,7 @@ const Signup = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
-
-    // email verification
-    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const navigate = useNavigate();
 
@@ -30,11 +27,10 @@ const Signup = () => {
         errorElement = <p className='text-danger'>Error:{error.message}</p>
     }
 
-    const handleRegister = async (event) => {
+    const handleRegister = (event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
-
         createUserWithEmailAndPassword(email, password)
 
     }
@@ -58,6 +54,9 @@ const Signup = () => {
                 </Button>
             </Form>
             <p className='mt-2'>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
+            <div className='mb-3'>
+                <SocialLogin></SocialLogin>
+            </div>
         </div>
     );
 };
