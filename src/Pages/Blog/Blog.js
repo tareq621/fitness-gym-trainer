@@ -16,14 +16,15 @@ const Blog = () => {
                 <h3>২। Why are you using firebase?</h3>
                 <p>যে কারনে ব্যবহার করবোঃ ব্যাকএন্ড সার্ভার ছাড়াই অ্যাপ্লিকেশন তৈরি করা যায়। ফায়ারবেস ডাটাবেসের সমস্ত ডেটা রিয়েল-টাইম পরিচালনা করে। ডাটাবেস থেকে ডেটা আদান-প্রদান সহজ এবং দ্রুত। ইউজার এর সিকিউরিটি এর জন্য ব্যবহার করা হয়। ব্যাকএন্ড সার্ভারের জন্য অতিরিক্ত অর্থ ব্যয় করার দরকার নেই।</p>
                 <h3>What other options do you have to implement authentication?</h3>
-                <p>Cloud messaging, Realtime database</p>
+                <p>Parse, Back4App, Kuzzle, Hoodie, Nhost, Heroku, Pubnub, Deployd
+                </p>
             </div>
             <div>
                 <h3>
                     ৩। What other services does firebase provide other than authentication?
                 </h3>
                 <p>
-                    Parse, Back4App, Kuzzle, Hoodie, Nhost, Heroku, Pubnub, Deployd
+                    Cloud messaging, Real-time database, Firestore database, Analytics, Hosting,
                 </p>
             </div>
         </div>

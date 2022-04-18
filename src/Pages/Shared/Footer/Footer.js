@@ -12,8 +12,8 @@ const Footer = () => {
             <footer>
                 <div className='d-flex justify-content-center text-decoration-none'>
                     <Nav.Link as={Link} to="/" className='text-light'>Home</Nav.Link>
-                    <Nav.Link as={Link} to="/services" className='text-light'>Services</Nav.Link>
-                    <Nav.Link as={Link} to="/" className='text-light'>Terms</Nav.Link>
+                    <Nav.Link as={Link} to="/about" className='text-light'>About</Nav.Link>
+                    <Nav.Link as={Link} to="/blog" className='text-light'>Blog</Nav.Link>
                     <Nav.Link as={Link} to="/" className='text-light'>Privacy Policy</Nav.Link>
                 </div>
                 <p className='text-light text-center mb-1'>Copyright <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> {year}. All rights reserved.</p>
