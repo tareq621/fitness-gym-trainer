@@ -3,18 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Service.css'
 
 const Service = (props) => {
     const { name, img, price, description } = props.service;
     return (
         <div>
-            <Card className="border-0 text-center">
-                <Card.Img variant="top" src={img} />
+            <Card className="border-0 text-center service-container">
+                <Card.Img variant="top" className='p-2' src={img} />
                 <Card.Body>
                     <Card.Title>
                         <h3>{name}</h3>
                     </Card.Title>
-                    <p>${price}</p>
+                    <p style={{ color: 'orange' }}>${price}</p>
                     <Card.Text style={{ color: 'gray' }}>
                         {description}
                     </Card.Text>
