@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Signup = () => {
+    const [email, setEmail] = useState('');
     let errorElement;
     // create a new user
     const [
@@ -13,6 +14,9 @@ const Signup = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
+
+    // email verification
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const navigate = useNavigate();
 
@@ -26,12 +30,13 @@ const Signup = () => {
         errorElement = <p className='text-danger'>Error:{error.message}</p>
     }
 
-    const handleRegister = (event) => {
+    const handleRegister = async (event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
 
         createUserWithEmailAndPassword(email, password)
+
     }
     return (
         <div className='container col-12 col-sm-12 col-md-6'>

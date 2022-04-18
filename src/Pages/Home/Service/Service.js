@@ -1,7 +1,7 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Card, Button, Nav } from 'react-bootstrap';
+import { Card, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
@@ -18,7 +18,7 @@ const Service = (props) => {
                     <Card.Text style={{ color: 'gray' }}>
                         {description}
                     </Card.Text>
-                    <Nav.Link className='text-decoration-none fw-bold text-primary'>Book Now
+                    <Nav.Link as={Link} to="/checkout" className='text-decoration-none fw-bold text-primary '>Book Now
                         <FontAwesomeIcon icon={faArrowRight} className="px-1"></FontAwesomeIcon>
                     </Nav.Link>
                 </Card.Body>
