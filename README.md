@@ -16,6 +16,8 @@ https://fitness-gym-trainer.web.app/
 * React.js
 * CSS3
 * Bootstrap
+* React Router
+* React Router hook
 
 ## Backend Technology
 

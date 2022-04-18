@@ -8,11 +8,11 @@ const SocialLogin = () => {
     const [signInWithGoogle, user] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
     if (user) {
-        navigate('/home'())
+        navigate('/home')
     }
 
     return (
-        <div className='col-12 col-sm-12 col-md-6 mx-auto'>
+        <div className='col-12 col-sm-12 col-md-6 mx-auto mb-2'>
             <div className='d-flex align-items-center'>
                 <div style={{ height: "1px" }} className='w-50 bg-secondary'></div>
                 <p className='mt-2 px-2'>or</p>
